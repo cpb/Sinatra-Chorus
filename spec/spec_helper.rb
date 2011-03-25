@@ -3,8 +3,6 @@ require File.join(File.dirname(__FILE__), '..', 'environment.rb')
 require 'rack/test'
 require 'rspec'
 
-require 'chorus'
-
 RSpec.configure do |config|
   include Rack::Test::Methods
 

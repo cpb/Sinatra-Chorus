@@ -6,3 +6,4 @@ require 'extlib'
 
 $:.unshift("./lib")
 require 'controllers'
+require 'chorus'
