@@ -7,6 +7,8 @@ require 'controllers'
 
 class Chorus < Sinatra::Base
 
+  enable :method_override
+
   include Controllers
 
   get "/" do
