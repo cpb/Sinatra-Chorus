@@ -7,8 +7,7 @@ require 'controllers'
 
 class Chorus < Sinatra::Base
 
-  use Controllers::Feature
-  use Controllers::Users
+  include Controllers
 
   get "/" do
     "hello world"
