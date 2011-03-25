@@ -1,0 +1,42 @@
+GIT
+  remote: https://github.com/rtomayko/shotgun.git
+  revision: d9195d7e1e4ac2eb3d949ec1b7df7a5e7e694ad5
+  tag: 0.9
+  specs:
+    shotgun (0.9)
+      rack (>= 1.0)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    ZenTest (4.5.0)
+    autotest (4.4.6)
+      ZenTest (>= 4.4.1)
+    diff-lcs (1.1.2)
+    extlib (0.9.15)
+    rack (1.2.2)
+    rack-test (0.5.7)
+      rack (>= 1.0)
+    rspec (2.5.0)
+      rspec-core (~> 2.5.0)
+      rspec-expectations (~> 2.5.0)
+      rspec-mocks (~> 2.5.0)
+    rspec-core (2.5.1)
+    rspec-expectations (2.5.0)
+      diff-lcs (~> 1.1.2)
+    rspec-mocks (2.5.0)
+    sinatra (1.2.1)
+      rack (~> 1.1)
+      tilt (>= 1.2.2, < 2.0)
+    tilt (1.2.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  autotest
+  extlib
+  rack-test
+  rspec
+  shotgun!
+  sinatra
