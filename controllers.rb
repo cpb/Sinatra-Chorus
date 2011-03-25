@@ -8,7 +8,7 @@ module Controllers
     self.constants.each do |controller_name|
       controller = self.const_get(controller_name)
 
-      base.use controller if controller.ancestors.include?(Sinatra::Base)
+      base.use controller if controller < Sinatra::Base
     end
   end
 end
