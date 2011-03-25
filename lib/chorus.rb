@@ -1,10 +1,3 @@
-require 'rubygems'
-require 'bundler/setup'
-require 'sinatra/base'
-
-$:.unshift(".")
-require 'controllers'
-
 class Chorus < Sinatra::Base
 
   enable :method_override
@@ -12,7 +5,7 @@ class Chorus < Sinatra::Base
   include Controllers
 
   get "/" do
-    "hello world"
+    "hello"
   end
 end
 

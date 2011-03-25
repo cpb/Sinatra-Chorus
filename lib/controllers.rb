@@ -1,5 +1,3 @@
-require 'extlib'
-
 controller_path = File.join(File.dirname(__FILE__),File.basename(__FILE__,".rb"))
 $:.unshift(controller_path)
 
