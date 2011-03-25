@@ -20,4 +20,16 @@ describe Chorus do
     get '/feature'
     last_response.should be_ok
   end
+  
+  it "should respond to /guess/Frank" do
+    get "/guess/Frank"
+    last_response.should be_ok
+    last_response.body.should eql("You got me!")
+  end
+
+  it "should respond to /guess/Tim" do
+    get "/guess/Tim"
+    last_response.should be_ok
+    last_response.body.should eql("You missed!")
+  end
 end

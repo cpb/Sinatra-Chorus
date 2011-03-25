@@ -13,5 +13,9 @@ HTML
     put "/users" do
       "put me too"
     end
+
+    get '/guess/*' do
+      "You missed!"
+    end
   end
 end

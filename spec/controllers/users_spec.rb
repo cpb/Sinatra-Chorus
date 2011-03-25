@@ -20,4 +20,17 @@ describe Controllers::Users do
     get '/'
     last_response.should_not be_ok
   end
+
+  it "should respond to /guess/Frank" do
+    get "/guess/Frank"
+    last_response.should be_ok
+    last_response.body.should eql("You missed!")
+    # this is the splat responder
+  end
+
+  it "should respond to /guess/Tim" do
+    get "/guess/Tim"
+    last_response.should be_ok
+    last_response.body.should eql("You missed!")
+  end
 end
